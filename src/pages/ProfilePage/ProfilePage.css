@@ -1,0 +1,239 @@
+/* ========================================
+   СТРАНИЦА ПРОФИЛЯ
+   ======================================== */
+
+.profile-page {
+    min-height: 100vh;
+    background: linear-gradient(145deg, #fff5f8 0%, #ffffff 100%);
+    padding: 20px 20px 120px 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* ---------- ЗАГОЛОВОК ---------- */
+.profile-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #fbcfe8, #f472b6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    margin: 0 auto 12px auto;
+    box-shadow: 0 8px 16px -4px rgba(236, 72, 153, 0.3);
+}
+
+.profile-name {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0;
+}
+
+.profile-email {
+    font-size: 14px;
+    color: #9ca3af;
+    margin: 4px 0 0 0;
+}
+
+/* ---------- КАРТОЧКИ НАСТРОЕК ---------- */
+.settings-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 16px 18px;
+    margin-bottom: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    border: 1px solid #f3f4f6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.2s ease;
+}
+
+.settings-card:hover {
+    border-color: #fbcfe8;
+}
+
+.settings-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.settings-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.settings-icon.pink {
+    background: #fce7f3;
+}
+.settings-icon.blue {
+    background: #dbeafe;
+}
+.settings-icon.green {
+    background: #d1fae5;
+}
+.settings-icon.yellow {
+    background: #fef3c7;
+}
+.settings-icon.purple {
+    background: #ede9fe;
+}
+
+.settings-label {
+    font-size: 15px;
+    font-weight: 500;
+    color: #1f2937;
+    margin: 0;
+}
+
+.settings-value {
+    font-size: 13px;
+    color: #6b7280;
+    margin: 2px 0 0 0;
+}
+
+.settings-action {
+    font-size: 20px;
+    color: #d1d5db;
+    cursor: pointer;
+    padding: 4px 8px;
+    border: none;
+    background: transparent;
+    transition: color 0.2s;
+}
+
+.settings-action:hover {
+    color: #9ca3af;
+}
+
+/* ---------- БЛОК СТАТИСТИКИ ---------- */
+.stats-block {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 18px 20px;
+    margin: 20px 0 16px 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    border: 1px solid #f3f4f6;
+}
+
+.stats-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0 0 12px 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 8px 4px;
+    border-radius: 12px;
+    background: #f9fafb;
+}
+
+.stat-number {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0;
+}
+
+.stat-label {
+    font-size: 11px;
+    color: #9ca3af;
+    margin: 0;
+}
+
+/* ---------- КНОПКА ВЫХОДА ---------- */
+.logout-button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 16px;
+    background: #fef2f2;
+    color: #ef4444;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 8px;
+    font-family: inherit;
+}
+
+.logout-button:hover {
+    background: #fee2e2;
+}
+
+/* ---------- НИЖНЯЯ НАВИГАЦИЯ ---------- */
+.profile-bottom-nav {
+    position: fixed;
+    bottom: 16px;
+    left: 16px;
+    right: 16px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 24px;
+    padding: 8px 4px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.profile-nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    padding: 6px 12px;
+    border-radius: 16px;
+    border: none;
+    background: transparent;
+    color: #9ca3af;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: inherit;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.profile-nav-item.active {
+    background: #fce7f3;
+    color: #db2777;
+}
+
+.profile-nav-item:hover {
+    color: #6b7280;
+}
+
+.profile-nav-icon {
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.profile-nav-label {
+    font-size: 10px;
+    font-weight: 500;
+}

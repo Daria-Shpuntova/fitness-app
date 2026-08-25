@@ -1,0 +1,350 @@
+/* ========================================
+   СТРАНИЦА ПИТАНИЯ
+   ======================================== */
+
+.nutrition-page {
+    min-height: 100vh;
+    background: linear-gradient(145deg, #fff5f8 0%, #ffffff 100%);
+    padding: 20px 20px 120px 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* ---------- ЗАГОЛОВОК ---------- */
+.nutrition-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.nutrition-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0;
+}
+
+.nutrition-date {
+    font-size: 14px;
+    color: #6b7280;
+    margin: 0 0 20px 0;
+}
+
+/* ---------- ПРОГРЕСС КАЛОРИЙ ---------- */
+.calorie-progress {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 16px 18px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    border: 1px solid #f3f4f6;
+}
+
+.calorie-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.calorie-numbers {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.calorie-numbers span {
+    font-weight: 400;
+    color: #6b7280;
+    font-size: 16px;
+}
+
+.calorie-remaining {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.calorie-remaining .positive {
+    color: #10b981;
+    font-weight: 600;
+}
+
+.calorie-remaining .negative {
+    color: #ef4444;
+    font-weight: 600;
+}
+
+.progress-track {
+    width: 100%;
+    height: 8px;
+    background: #f3f4f6;
+    border-radius: 9999px;
+    overflow: hidden;
+}
+
+.progress-fill-calories {
+    height: 100%;
+    border-radius: 9999px;
+    background: linear-gradient(90deg, #f472b6, #ec4899);
+    transition: width 0.5s ease;
+}
+
+/* ---------- ПЕРЕКЛЮЧАТЕЛЬ ПРИЁМОВ ---------- */
+.meal-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+}
+
+.meal-tab {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 16px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: #f3f4f6;
+    color: #6b7280;
+    white-space: nowrap;
+    font-family: inherit;
+}
+
+.meal-tab.active {
+    background: #fce7f3;
+    color: #db2777;
+}
+
+.meal-tab:hover {
+    background: #e5e7eb;
+}
+
+/* ---------- КАРТОЧКА ПРИЁМА ПИЩИ ---------- */
+.meal-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 16px 18px;
+    margin-bottom: 14px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    border: 1px solid #f3f4f6;
+    transition: all 0.2s ease;
+}
+
+.meal-card .meal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.meal-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0;
+}
+
+.meal-time {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.meal-body {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.meal-photo {
+    width: 70px;
+    height: 70px;
+    border-radius: 14px;
+    background: #f3f4f6;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: #9ca3af;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+}
+
+.meal-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.meal-info {
+    flex: 1;
+}
+
+.meal-info p {
+    margin: 2px 0;
+    font-size: 14px;
+    color: #4b5563;
+}
+
+.meal-info .meal-calories {
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.meal-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #f3f4f6;
+}
+
+.meal-actions button {
+    padding: 6px 14px;
+    border: none;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: #f3f4f6;
+    color: #4b5563;
+    font-family: inherit;
+}
+
+.meal-actions button:hover {
+    background: #e5e7eb;
+}
+
+.meal-actions .edit-btn {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.meal-actions .edit-btn:hover {
+    background: #bfdbfe;
+}
+
+.meal-actions .delete-btn {
+    background: #fef2f2;
+    color: #ef4444;
+}
+
+.meal-actions .delete-btn:hover {
+    background: #fee2e2;
+}
+
+/* ---------- КНОПКА ДОБАВИТЬ ---------- */
+.add-meal-btn {
+    width: 100%;
+    padding: 14px;
+    border: 2px dashed #d1d5db;
+    border-radius: 16px;
+    background: transparent;
+    color: #6b7280;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 4px;
+    font-family: inherit;
+}
+
+.add-meal-btn:hover {
+    border-color: #f472b6;
+    color: #db2777;
+    background: #fdf2f8;
+}
+
+/* ---------- РЕКОМЕНДАЦИЯ ---------- */
+.recommendation-card {
+    background: #fefce8;
+    border-radius: 16px;
+    padding: 14px 16px;
+    margin: 20px 0 8px 0;
+    border: 1px solid #fde68a;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.recommendation-icon {
+    width: 40px;
+    height: 40px;
+    background: #fef3c7;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.recommendation-text {
+    font-size: 14px;
+    color: #4b5563;
+    margin: 0;
+}
+
+.recommendation-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #374151;
+    margin: 0 0 2px 0;
+}
+
+/* ---------- НИЖНЯЯ НАВИГАЦИЯ ---------- */
+.nutrition-bottom-nav {
+    position: fixed;
+    bottom: 16px;
+    left: 16px;
+    right: 16px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 24px;
+    padding: 8px 4px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nutrition-nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    padding: 6px 12px;
+    border-radius: 16px;
+    border: none;
+    background: transparent;
+    color: #9ca3af;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: inherit;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.nutrition-nav-item.active {
+    background: #fce7f3;
+    color: #db2777;
+}
+
+.nutrition-nav-item:hover {
+    color: #6b7280;
+}
+
+.nutrition-nav-icon {
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.nutrition-nav-label {
+    font-size: 10px;
+    font-weight: 500;
+}

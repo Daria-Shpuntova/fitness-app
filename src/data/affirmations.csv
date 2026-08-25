@@ -1,0 +1,51 @@
+Еext,phase,mood,time_of_day
+"Твоё тело обновляется. Дай ему покой и тепло.",menstrual,any,morning
+"Ты имеешь право на паузу. Отдых — это тоже забота.",menstrual,sad,morning
+"Сегодня твой организм работает над очищением. Будь мягка к себе.",menstrual,any,evening
+"Ты пережила этот день с достоинством. Спасибо себе.",menstrual,any,evening
+"Кровь — это сила. Ты освобождаешься от старого.",menstrual,anxious,evening
+"Ты можешь быть слабой сегодня. Это нормально.",menstrual,sad,evening
+"Ты — как земля перед посевом. Отдыхай, набирайся сил.",menstrual,any,morning
+"Твоя усталость имеет право быть. Не борись с ней.",menstrual,fatigue,morning
+"Сегодня ты — цветок, который закрывается на ночь. Завтра распустишься снова.",menstrual,any,evening
+"Ты не обязана быть продуктивной сегодня. Просто будь.",menstrual,anxious,morning
+"Твоё тело знает, что ему нужно. Послушай его.",menstrual,any,evening
+"Ты справилась с этой неделей. Теперь — отдых.",menstrual,any,evening
+"Твоя энергия возвращается. Начни день с улыбки.",follicular,any,morning
+"Сегодня — день новых идей и лёгких движений.",follicular,happy,morning
+"Ты просыпаешься, и мир становится ярче.",follicular,any,morning
+"Твои гормоны шепчут: Время действовать"".",follicular,happy,morning
+"Ты — как весенний ручей. Энергия течёт сквозь тебя.",follicular,any,evening
+"Сегодня ты была продуктивна. Отдохни — ты заслужила.",follicular,any,evening
+"Ты сделала больше, чем думала. Гордись собой.",follicular,happy,evening
+"Новые идеи приходят легко. Запиши их.",follicular,neutral,morning
+"Ты на подъёме. Используй эту энергию для важного.",follicular,happy,morning
+"Сегодня отличный день для новых начинаний.",follicular,any,morning
+"Ты на пике силы! Используй это.",ovulation,happy,morning
+"Сегодня твой супер-день. Ты можешь всё.",ovulation,happy,morning
+"Почувствуй свою красоту и мощь.",ovulation,any,morning
+"Ты сияешь. Твоя энергия заразительна.",ovulation,happy,evening
+"Ты сделала это! Твои мышцы запомнили нагрузку.",ovulation,happy,after_workout
+"Ты — огонь! Сейчас твой пик возможностей.",ovulation,happy,morning
+"Сегодня ты — королева. Действуй смело.",ovulation,happy,morning
+"Ты на высоте. Не сомневайся в себе.",ovulation,happy,evening
+"Твоя уверенность растёт с каждым днём.",ovulation,happy,morning
+"Ты притягиваешь удачу сегодня. Используй это.",ovulation,any,morning
+"Ты имеешь право на отдых. Добавь магний.",luteal,angry,evening
+"Это пройдёт. Ты справишься.",luteal,anxious,morning
+"Ты сегодня была особенно сильной.",luteal,any,evening
+"Гормоны играют — не спорь с ними. Добавь заботы.",luteal,angry,morning
+"Ты — воин. Ты проходишь через это.",luteal,sad,evening
+"Ты имеешь право быть чувствительной сегодня.",luteal,sad,morning
+"Сделай глубокий вдох. Ты справишься с этим днём.",luteal,anxious,morning
+"Ты не обязана быть идеальной сегодня. Просто будь.",luteal,any,evening
+"Твоё тело готовится к обновлению. Поддержи его.",luteal,any,evening
+"Ты пережила этот день, когда хотелось всё бросить. Ты — герой.",luteal,any,evening
+"Добавь омега-3 и магний. Твой мозг скажет спасибо.",luteal,angry,morning
+"Позволь себе быть нежной к себе сегодня.",luteal,sad,evening
+"Ты — лучшая версия себя прямо сейчас.",any,any,morning
+"Ты заслуживаешь заботы и внимания.",any,any,evening
+"Ты — не свои гормоны. Ты — целая вселенная.",any,any,morning
+"Ты справляешься. И это уже победа.",any,any,evening
+"Ты достойна счастья и лёгкости.",any,any,morning
+"Ты — главный человек в своей жизни. Не забывай об этом.",any,any,evening
